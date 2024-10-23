@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Unit Conversion System</title>
+  <link rel="stylesheet"href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <section id="home"> <!--Groups together related content. Has its own Header-->
+    <header>
+      Unit Conversions
+    </header>
+    <nav>
+      <div class="topdiv">  <!--Container to group elements-->
+        <a href="#temperature"><button class="topmenu">Temperature</button></a>
+        <a href="#weight"><button class="topmenu">Weight</button></a>
+        <a href="#distance"><button class="topmenu">Distance</button></a>
+        <a href="#height"><button class="topmenu">Height</button> </a>
+      </div>
+    </nav>
+  </section>
+
+  <div style="clear:both;"></div>  <!--To separate sections so that they dont affect each other-->
+  <div id="all-conversion-sections">
+  
+    <section id="temperature" class="b temperature">
+      <div id="tmp">
+        <figure>
+          <img src="https://cdn-icons-png.freepik.com/512/7340/7340001.png" width="150px"/>
+          <figcaption>Celcius to Farenheit Conversion</figcaption>
+        </figure>
+
+        <article>
+          <fieldset>
+            <legend>Temperature</legend>
+            <label for="Temperature">Celsius</label><br/>
+            <input type="number" id="celsius"><br/>
+            <button class="convert-temp" onclick="temperature()">Convert</button><br/>
+            <input type="number" id="fahrenheit"readonly><br/>
+            <label for="Temperature">Fahrenheit</label>
+          </fieldset>
+          <aside>
+            To convert celcius to farhenheit yourself, use this formula replacing 'C' with your Temperature (in Celsius): (C*9/5)+32
+          </aside>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="weight"class="b weight">
+      <div id="wgt">
+        <figure>
+          <img src="images/weight.png" width="130px"/>
+          <figcaption>
+            Kilograms to Pounds Conversion
+          </figcaption><br/>
+          <article>
+            <fieldset>
+              <legend>Weight</legend>
+
+              <label for="Weight">KG</label><br/>
+              <input type="number"id="kilo"><br/>
+              <button class="convert-wgt" onclick="weight()">Convert</button><br/>
+              <input type="number" id="pounds"readonly><br/>
+              <label for="Weight">Pounds</label>
+
+            </fieldset>
+            <aside>
+              To convert kilograms to grams yourself, use this formula replacing the 'kg' with your weight in kilograms: kg* 2.20462
+            </aside>
+          </article>
+        </figure>
+      </div>
+    </section>
+
+    <section id="distance" class="b distance">
+      <div id="dst">
+        <figure>
+          <img src="https://cdn-icons-png.flaticon.com/512/5998/5998867.png"width="150px"/>
+          <figcaption>Kilometer to Miles  Conversion</figcaption>
+        </figure>
+        <article>
+          <fieldset>
+            <legend>distance</legend>
+            <label for="Distance">Kilometers</label><br/>
+            <input type="number" id="km"><br/>
+            <button class="convert-dist"  onclick="distance()">Convert</button><br/>
+            <input type="number" id="miles"readonly><br/>
+            <label for="Distance">Miles</label>
+          </fieldset>
+          <aside>
+            To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilometers: km*0.62137
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <section id="height" class="b height">
+    <div id="hgt">
+      <figure>
+        <img src="images/height.png"width="150px"/>
+        <figcaption>Centimeters to Feet Conversion</figcaption>
+        <article>
+          <fieldset>
+            <legend>Height</legend>
+            <label for="Centimeters">Centimeters</label></br>
+            <input type="number" id="cm"></br>
+            <button class="convert-hgt" onclick="height()">Convert</button></br>
+            <input type="number" id="ft"readonly></br>
+            <label for="Feet">Feet</label></br>
+          </fieldset>
+          <aside>To convert Centimeters into feet yourself, use this formula replacing cm with your height in centimeters: cm/30.48 </aside>
+        </article>
+      </figure>
+    </div>
+    </section>
+
+    <div style="clear:both;"></div>
+  </div> <!--All Conversion section ends-->
+
+ <div id="go-home" class="iconbutton">
+  <a href="#home"> <!--jumps to section id home-->
+    <img src="images/home-button.png"width="45px"/>
+  </a>
+ </div> 
+
+ <footer>
+  <p>&#169 2024 Unit Conversion Website. All rights reserved.</p>
+ </footer>
+
+</body>
+</html>
